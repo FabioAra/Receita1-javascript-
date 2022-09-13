@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>   
+
+   <head>
+
+      <meta charset="UTF-8">      
+
+   </head>
+
+   <body>
+
+      <div id="meu amor">
+         <button id="botaoCarregar" >Carregando cervejas...</button>
+      </div> 
+      <div id="cervejas">
+      </div>           
+
+   </body>   
+
+   <script>
+
+      function carregarDiv(){
+
+         let div = document.getElementById("cervejas").innerHTML = `<h1>Itaipava</h1>`
+      
+
+      }
+      let botao = document.getElementById("botaoCarregar").addEventListener("click", carregarDiv)         
+
+      function removerDiv(){
+         let div = document.getElementById("meu amor")
+
+      }
+
+      let botao2 = document.getElementById("botaoCarregar").addEventListener("click", removerDiv)               
+
+   </script>
+
+</html>
