@@ -1,55 +1,49 @@
-<html>   
-    <head>
-        <meta charset="UTF-8">   
-        <style>
-            #anime {
-                opacity: 0;
-                -webkit-transition: opacity 0.3s ease-in-out;
-                -moz-transition: opacity 0.3s ease-in-out;
-                -ms-transition: opacity 0.3s ease-in-out;
-                -o-transition: opacity 0.3s ease-in-out;
-                transition: opacity 0.3 ease-in-out;
-            }
-            #anime.fade {
-                opacity:1;
-            }
-        </style>   
-    </head>
+<!DOCTYPE html>
+<html>
 
-    <body>
-        <div id="det">Carregando cervejas...</div>  
-        <div><button onclick="carregarDiv()">click</button></div>  
-        
-        <div id="dev"></div>  
-        <div id="botao"><button onclick="carregarNome()">Aparecer</button></div> 
+<head>
+  <meta charset="utf-8">
+  <meta name="receita3" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-        <div id="anime">até mais </div>  
-        <div id="button"><button onclick="fadeIn()">Fade</button></div> 
-   </body>   
+<body>
+  
+  <div id="c1">Carregando cervejas...</div>  
+    <div><button onclick="carregarDiv()">Cervejas</button></div>  
+    
+    <div id="c1"></div>  
+    <div id="botao"><button onclick="carregarNome()">Visivel</button></div> 
 
-   <script>
-        function carregarDiv(){
-            let div = document.getElementById("det")
-            div.innerHTML = `<h1>Guinness</h1>`
-        }
-        function carregarNome(){
-            let div = document.getElementById("dev")
-            div.innerHTML = `<h1>Guinness</h1>`
-            let div2 = document.getElementById("botao")
-            div2.innerHTML = `<button onclick="ApagarDiv()">Apagar</button>`
-        }
+    <div id="anime">Volte sempre</div>  
+    <div id="button"><button onclick="fadeIn()">Fade</button></div> 
+  <script>
+    function carregarDiv(){
+        let div = document.getElementById("c1")
+        div.innerHTML = `<h1>Itaipava,skol,brahma</h1>`
+    }
+    function carregarNome(){
+        let div = document.getElementById("c1")
+        div.innerHTML = `<h1>Guinness</h1>`
+        let div2 = document.getElementById("botao")
+        div2.innerHTML = `<button onclick="ApagarDiv()">Apagar</button>`
+    }
 
-        function ApagarDiv(){
-            let div = document.getElementById("dev")
-            div.innerHTML = `<h1></h1>`
-            let div2 = document.getElementById("botao")
-            div2.innerHTML = `<button onclick="carregarNome()">Aparecer</button>`
-        }
+    function ApagarDiv(){
+        let div = document.getElementById("c1")
+        div.innerHTML = `<h1></h1>`
+        let div2 = document.getElementById("botao")
+        div2.innerHTML = `<button onclick="carregarNome()">Aparecer</button>`
+    }
 
-        function fadeIn(){
-            let anime = document.getElementById('anime');
-            anime.classList.toggle('fade');
-        }
+    function fadeIn(){
+        let anime = document.getElementById('anime');
+        anime.classList.toggle('fade');
+    }
 
-   </script>
+
+ </script> 
+</body>
+
 </html>
